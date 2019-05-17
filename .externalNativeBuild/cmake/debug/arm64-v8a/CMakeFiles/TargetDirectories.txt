@@ -1,0 +1,4 @@
+E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/native_app_glue.dir
+E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/native-activity.dir
+E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir

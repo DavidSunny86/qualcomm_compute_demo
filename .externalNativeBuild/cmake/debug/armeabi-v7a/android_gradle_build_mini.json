@@ -1,0 +1,47 @@
+{
+  "buildFiles": [
+    "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "mgd-Debug-armeabi-v7a": {
+      "artifactName": "mgd",
+      "abi": "armeabi-v7a",
+      "output": "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\..\\jniLibs\\armeabi-v7a\\libMGD.so"
+    },
+    "hetCompute-1.0.0-Debug-armeabi-v7a": {
+      "artifactName": "hetCompute-1.0.0",
+      "abi": "armeabi-v7a",
+      "output": "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\..\\jniLibs\\armeabi-v7a\\libhetCompute-1.0.0.so"
+    },
+    "native_app_glue-Debug-armeabi-v7a": {
+      "artifactName": "native_app_glue",
+      "buildCommand": "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target native_app_glue",
+      "abi": "armeabi-v7a",
+      "output": "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a\\libnative_app_glue.a"
+    },
+    "hetcompute_dsp-Debug-armeabi-v7a": {
+      "artifactName": "hetcompute_dsp",
+      "abi": "armeabi-v7a",
+      "output": "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\..\\jniLibs\\armeabi-v7a\\libhetcompute_dsp.so"
+    },
+    "aga-Debug-armeabi-v7a": {
+      "artifactName": "aga",
+      "abi": "armeabi-v7a",
+      "output": "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\..\\jniLibs\\armeabi-v7a\\libAGA.so"
+    },
+    "hetcompute_dsp_skel-Debug-armeabi-v7a": {
+      "artifactName": "hetcompute_dsp_skel",
+      "abi": "armeabi-v7a",
+      "output": "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\..\\jniLibs\\armeabi-v7a\\libhetcompute_dsp_skel.so"
+    },
+    "native-activity-Debug-armeabi-v7a": {
+      "artifactName": "native-activity",
+      "buildCommand": "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target native-activity",
+      "abi": "armeabi-v7a",
+      "output": "E:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libnative-activity.so"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "buildFiles": [
+    "F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "native_app_glue-Release-arm64-v8a": {
+      "artifactName": "native_app_glue",
+      "buildCommand": "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target native_app_glue",
+      "abi": "arm64-v8a",
+      "output": "F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\release\\arm64-v8a\\libnative_app_glue.a"
+    },
+    "mgd-Release-arm64-v8a": {
+      "artifactName": "mgd",
+      "abi": "arm64-v8a",
+      "output": "F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\..\\jniLibs\\arm64-v8a\\libMGD.so"
+    },
+    "aga-Release-arm64-v8a": {
+      "artifactName": "aga",
+      "abi": "arm64-v8a",
+      "output": "F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\..\\jniLibs\\arm64-v8a\\libAGA.so"
+    },
+    "native-activity-Release-arm64-v8a": {
+      "artifactName": "native-activity",
+      "buildCommand": "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target native-activity",
+      "abi": "arm64-v8a",
+      "output": "F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libnative-activity.so"
+    }
+  }
+}

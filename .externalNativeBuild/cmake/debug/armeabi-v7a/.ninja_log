@@ -1,0 +1,21 @@
+# ninja log v5
+22	1209	0	CMakeFiles/native_app_glue.dir/E_/libs/android-ndk-r13b/sources/android/native_app_glue/android_native_app_glue.c.o	2d3fa142e953689d
+4	4170	0	CMakeFiles/native-activity.dir/main.cpp.o	7c2a7f4fae44822b
+1209	1951	0	libnative_app_glue.a	a0fae51da10b2617
+4170	4758	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	bddb40826e1ed816
+21	3843	0	CMakeFiles/native-activity.dir/main.cpp.o	7c2a7f4fae44822b
+3843	5169	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	bddb40826e1ed816
+4	3649	0	CMakeFiles/native-activity.dir/main.cpp.o	7c2a7f4fae44822b
+3649	4185	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	bddb40826e1ed816
+4	3460	0	CMakeFiles/native-activity.dir/main.cpp.o	7c2a7f4fae44822b
+3460	3992	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	bddb40826e1ed816
+3	3431	0	CMakeFiles/native-activity.dir/main.cpp.o	7c2a7f4fae44822b
+3431	4258	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	bddb40826e1ed816
+3	3436	0	CMakeFiles/native-activity.dir/main.cpp.o	7c2a7f4fae44822b
+3436	3947	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	bddb40826e1ed816
+387	6560	0	CMakeFiles/native-activity.dir/main.cpp.o	7e3a47c7b3215f6a
+6561	7786	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	ec1ecd7ea0214563
+3	5024	0	CMakeFiles/native_app_glue.dir/E_/libs/android-ndk-r13b/sources/android/native_app_glue/android_native_app_glue.c.o	27909192e741cc0d
+5024	6587	0	libnative_app_glue.a	a0fae51da10b2617
+6587	15271	0	CMakeFiles/native-activity.dir/main.cpp.o	9b56d613f9bc7630
+15271	16362	0	E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	c4526323a82859d1

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RenderingCommandBuffers</string>
+    <string name="title_activity_qualcomm__compute__dsp_">Qualcomm_Compute_Dsp_Activity</string>
+</resources>

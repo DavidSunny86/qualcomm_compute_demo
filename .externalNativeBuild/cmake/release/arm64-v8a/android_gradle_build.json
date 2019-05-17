@@ -1,0 +1,76 @@
+
+{
+	"buildFiles" : 
+	[
+		"F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"aga-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "aga",
+			"buildType" : "release",
+			"output" : "F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/../jniLibs/arm64-v8a/libAGA.so",
+			"toolchain" : "598761457"
+		},
+		"mgd-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "mgd",
+			"buildType" : "release",
+			"output" : "F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/../jniLibs/arm64-v8a/libMGD.so",
+			"toolchain" : "598761457"
+		},
+		"native-activity-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-activity",
+			"buildCommand" : "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target native-activity",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target aarch64-none-linux-android -gcc-toolchain E:/libs/android-ndk-r13b/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=E:/libs/android-ndk-r13b/platforms/android-21/arch-arm64  -Dnative_activity_EXPORTS -IE:\\libs\\android-ndk-r13b\\sources\\android\\native_app_glue -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti  -std=gnu++11 -Wall -Werror -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/main.cpp",
+					"workingDirectory" : "F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/release/obj/arm64-v8a/libnative-activity.so",
+			"toolchain" : "598761457"
+		},
+		"native_app_glue-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native_app_glue",
+			"buildCommand" : "E:\\libs\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target native_app_glue",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target aarch64-none-linux-android -gcc-toolchain E:/libs/android-ndk-r13b/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=E:/libs/android-ndk-r13b/platforms/android-21/arch-arm64   -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "E:/libs/android-ndk-r13b/sources/android/native_app_glue/android_native_app_glue.c",
+					"workingDirectory" : "F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "F:/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/release/arm64-v8a/libnative_app_glue.a",
+			"toolchain" : "598761457"
+		}
+	},
+	"toolchains" : 
+	{
+		"598761457" : 
+		{
+			"cCompilerExecutable" : "E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

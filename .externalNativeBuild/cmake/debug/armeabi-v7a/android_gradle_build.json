@@ -18,7 +18,7 @@
 			"artifactName" : "aga",
 			"buildType" : "debug",
 			"output" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/../jniLibs/armeabi-v7a/libAGA.so",
-			"toolchain" : "598761457"
+			"toolchain" : "1988296553"
 		},
 		"hetCompute-1.0.0-Debug-armeabi-v7a" : 
 		{
@@ -26,7 +26,7 @@
 			"artifactName" : "hetCompute-1.0.0",
 			"buildType" : "debug",
 			"output" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/../jniLibs/armeabi-v7a/libhetCompute-1.0.0.so",
-			"toolchain" : "598761457"
+			"toolchain" : "1988296553"
 		},
 		"hetcompute_dsp-Debug-armeabi-v7a" : 
 		{
@@ -34,7 +34,7 @@
 			"artifactName" : "hetcompute_dsp",
 			"buildType" : "debug",
 			"output" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/../jniLibs/armeabi-v7a/libhetcompute_dsp.so",
-			"toolchain" : "598761457"
+			"toolchain" : "1988296553"
 		},
 		"hetcompute_dsp_skel-Debug-armeabi-v7a" : 
 		{
@@ -42,7 +42,7 @@
 			"artifactName" : "hetcompute_dsp_skel",
 			"buildType" : "debug",
 			"output" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/../jniLibs/armeabi-v7a/libhetcompute_dsp_skel.so",
-			"toolchain" : "598761457"
+			"toolchain" : "1988296553"
 		},
 		"mgd-Debug-armeabi-v7a" : 
 		{
@@ -50,7 +50,7 @@
 			"artifactName" : "mgd",
 			"buildType" : "debug",
 			"output" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/../jniLibs/armeabi-v7a/libMGD.so",
-			"toolchain" : "598761457"
+			"toolchain" : "1988296553"
 		},
 		"native-activity-Debug-armeabi-v7a" : 
 		{
@@ -62,13 +62,13 @@
 			[
 				
 				{
-					"flags" : "  -target armv7-none-linux-androideabi -gcc-toolchain E:/libs/android-ndk-r13b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/libs/android-ndk-r13b/platforms/android-21/arch-arm  -Dnative_activity_EXPORTS -IE:\\libs\\android-ndk-r13b\\sources\\android\\native_app_glue -IE:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi-v7a\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti   -pthread -std=gnu++11 -fexceptions  -frtti -Ofast -Osize  -DHETCOMPUTE_HAVE_QTI_DSP=1 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"flags" : "  -target armv7-none-linux-androideabi -gcc-toolchain E:/libs/android-ndk-r13b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/libs/android-ndk-r13b/platforms/android-21/arch-arm  -Dnative_activity_EXPORTS -IE:\\libs\\android-ndk-r13b\\sources\\android\\native_app_glue -IE:\\backup_f\\RenderingCommandBuffers\\Export\\RenderingCommandBuffers\\src\\main\\cpp\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi-v7a\\include -isystem E:\\libs\\android-ndk-r13b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti   -pthread -std=c++11 -stdlib=libstdc++ -fexceptions  -frtti -Ofast -Osize  -DHETCOMPUTE_HAVE_QTI_DSP=1 -O0 -fno-limit-debug-info  -fPIC    -c ",
 					"src" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/src/main/cpp/main.cpp",
 					"workingDirectory" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/debug/armeabi-v7a"
 				}
 			],
 			"output" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so",
-			"toolchain" : "598761457"
+			"toolchain" : "1988296553"
 		},
 		"native_app_glue-Debug-armeabi-v7a" : 
 		{
@@ -86,15 +86,15 @@
 				}
 			],
 			"output" : "E:/backup_f/RenderingCommandBuffers/Export/RenderingCommandBuffers/.externalNativeBuild/cmake/debug/armeabi-v7a/libnative_app_glue.a",
-			"toolchain" : "598761457"
+			"toolchain" : "1988296553"
 		}
 	},
 	"toolchains" : 
 	{
-		"598761457" : 
+		"1988296553" : 
 		{
-			"cCompilerExecutable" : "E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang.exe",
-			"cppCompilerExecutable" : "E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang++.exe"
+			"cCompilerExecutable" : "E:/libs/android-ndk-r13b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "E:/libs/android-ndk-r13b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
 		}
 	}
 }

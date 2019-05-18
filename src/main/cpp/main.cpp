@@ -35,6 +35,13 @@
 #define _ENABLE_DSP_
 
 #ifdef _ENABLE_DSP_
+// enable dsp support
+#ifndef HETCOMPUTE_HAVE_QTI_DSP
+    #define HETCOMPUTE_HAVE_QTI_DSP
+#endif
+// enable gpu support
+//#define HETCOMPUTE_HAVE_GPU
+
 #include <vector>
 #include "hetcompute/hetcompute.hh"
 
@@ -70,10 +77,24 @@ public:
     }
 };
 
+typedef void (*pForIt)();
+
+static int DspFun(BoundBox* bb, float* v){
+    *v = hetcompute::dot(bb->pos0, bb->pos1) + hetcompute::dot(bb->pos1, bb->pos2);
+    return 0;
+}
+static int DspFunPrint(float* v){
+    for(int i=0;i<BLOCK_SIZE;i++){
+        LOGI("$$$  dspPrint: %i %f", i, v[i]);
+    }
+    return 0;
+}
+
 extern "C" JNIEXPORT void JNICALL Java_com_yw_agaDemo_UnityPlayerActivity_TestQualcommComputeDspOcclusionCull(){
 
 #ifdef _ENABLE_DSP_
     hetcompute::runtime::init();
+
 
 #endif
 
@@ -81,34 +102,72 @@ extern "C" JNIEXPORT void JNICALL Java_com_yw_agaDemo_UnityPlayerActivity_TestQu
     std::vector<BoundBox> vin(BLOCK_SIZE);
     std::vector<bool> isContain(BLOCK_SIZE, 0);
     std::vector<float> dotRes(BLOCK_SIZE, 0.0f);
+
+
+    auto boundBoxBuff = hetcompute::create_buffer<BoundBox>(BLOCK_SIZE);
+    auto valueBuff = hetcompute::create_buffer<float>(BLOCK_SIZE);
+    auto bbb = (BoundBox*) new BoundBox[BLOCK_SIZE];
+    auto vb = (float*) new float[BLOCK_SIZE];
+
+
     int i=0;
+    boundBoxBuff.acquire_wi();
     for(auto it = vin.begin(); it != vin.end(); it++){
         srand(i * 3);
         BoundBox boundBox;
         boundBox.Init();
         vin[i] = boundBox;
+        bbb[i] = boundBox;
+        boundBoxBuff[i] = boundBox;
         i++;
     }
+    boundBoxBuff.release();
 
     int loopTime = 10;
 
     LOGI("$$$ DSP start ...");
     for(int i=0;i<loopTime;i++) {
+        /*
         hetcompute::pfor_each(size_t(0), vin.size(), [&vin, &dotRes](size_t i) {
-//        vin[i] = 2 * i * i;
-//        isContain[i] = vin[i].pos0.x > 50 && vin[i].pos2.x > 50 && vin[i].pos1.x > 50;
-
             BoundBox bb = vin[i];
             dotRes[i] = hetcompute::dot(bb.pos1, bb.pos2)
                 + hetcompute::dot(bb.pos2, bb.pos3)
                 + hetcompute::dot(bb.pos3, bb.pos4) + hetcompute::dot(bb.pos4, bb.pos5)
                 + hetcompute::dot(bb.pos5, bb.pos6) + hetcompute::dot(bb.pos6, bb.pos7);
-            if(hetcompute::){
 
-            }
         });
+         */
+
+
+        //hetcompute::buffer_ptr<BoundBox>, hetcompute::buffer_ptr<float>
+        auto dspKernel = hetcompute::create_dsp_kernel<>(DspFun);
+
+
+        auto dspTask = hetcompute::create_task(dspKernel, &boundBoxBuff[0], &valueBuff[0]);
+        //auto dspTask1 = hetcompute::create_task(DspFunPrint, vb);
+
+        //dspTask->then(dspTask1);
+
+        dspTask->launch();
+        dspTask->wait_for();
+
     }
+
     LOGI("$$$ DSP end ...");
+
+
+    for(int i=0;i<BLOCK_SIZE;i++) {
+        float d = vb[i];
+        LOGI("$$$ print %i dot: %f", i, d);
+    }
+
+    valueBuff.acquire_rw();
+    for(int i=0;i<BLOCK_SIZE;i++) {
+        float d = valueBuff[i];
+        LOGI("$$$ print vbuff %i dot: %f", i, d);
+    }
+    valueBuff.release();
+
 
     LOGI("$$$ CPU start ...");
     for(int i=0;i<loopTime;i++) {
@@ -122,10 +181,6 @@ extern "C" JNIEXPORT void JNICALL Java_com_yw_agaDemo_UnityPlayerActivity_TestQu
     }
     LOGI("$$$ CPU end ...");
 
-    for(int i=0;i<BLOCK_SIZE;i++) {
-        float d = dotRes[i];
-        LOGI("$$$ print %i dot: %f", i, d);
-    }
 #endif
 
 

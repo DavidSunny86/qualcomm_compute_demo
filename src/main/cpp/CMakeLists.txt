@@ -8,11 +8,11 @@ cmake_minimum_required(VERSION 3.4.1)
 #set(CMAKE_C_COMPILER E:/libs/ARMCompiler6.12/bin/armclang.exe)
 #set(CMAKE_CXX_COMPILER E:/libs/ARMCompiler6.12/bin/armclang.exe)
 
- set(CMAKE_C_COMPILER E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang.exe)
- set(CMAKE_CXX_COMPILER E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang++.exe)
+# set(CMAKE_C_COMPILER E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang.exe)
+# set(CMAKE_CXX_COMPILER E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang++.exe)
 
- set(CMAKE_C_LINK_EXECUTABLE E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang-cl.exe)
- set(CMAKE_CXX_LINK_EXECUTABLE  E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang-cl.exe)
+# set(CMAKE_C_LINK_EXECUTABLE E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang-cl.exe)
+# set(CMAKE_CXX_LINK_EXECUTABLE  E:/libs/android-ndk-r16b/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/windows-x86_64/bin/clang-cl.exe)
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
@@ -71,7 +71,7 @@ set(${CMAKE_C_FLAGS}, "${CMAKE_C_FLAGS} -DHETCOMPUTE_DISABLE_EXCEPTIONS
 
 
 # now build app's shared lib
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -pthread -std=gnu++11 -fexceptions  -frtti -Ofast -Osize  -DHETCOMPUTE_HAVE_QTI_DSP=1") # -fmerge-functions  -mfpu=neon   -std=c++11 -stdlib=libstdc++
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -pthread -std=c++11 -stdlib=libstdc++ -fexceptions  -frtti -Ofast -Osize  -DHETCOMPUTE_HAVE_QTI_DSP=1") # -fmerge-functions  -mfpu=neon  -std=gnu++11  -stdlib=libstdc++
 
 add_library(native_app_glue STATIC
         ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)

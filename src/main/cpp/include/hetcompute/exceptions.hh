@@ -37,7 +37,12 @@ namespace hetcompute
     class error_exception : public hetcompute_exception
     {
     public:
-        error_exception(std::string msg, const char* filename, int lineno, const char* fname);
+        error_exception(std::string msg, const char* filename, int lineno, const char* fname){
+            _message = msg;
+            _file = filename;
+            _line = lineno;
+            _function = fname;
+        }
 
         ~error_exception() HETCOMPUTE_NOEXCEPT{};
 
